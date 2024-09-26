@@ -33,7 +33,7 @@ public class ProductController {
 	@PostMapping("/product/save")
 	 public ResponseEntity<Product> save(@RequestBody ProductVM productvm){
 		Product product = new Product();
-		
+		 System.out.println("test");
 		product.setProductName(productvm.getProductName());
 		product.setProductCost(productvm.getProductCost());
 		product.setProductOfferprice(productvm.getProductOfferprice());
